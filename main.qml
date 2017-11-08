@@ -25,11 +25,9 @@ Application {
     centerColor: "#b04d1c"
     outerColor: "#421c0a"
 
-    Text {
+    Label {
         id: positionText
         anchors.centerIn: parent
-        font.pixelSize: Dims.h(13)
-        color: "#FFFFFF"
         horizontalAlignment: Text.AlignHCenter
     }
 

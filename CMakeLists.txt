@@ -15,7 +15,7 @@ include(ECMQMLModules)
 include(AsteroidCMakeSettings)
 include(AsteroidTranslations)
 
-ecm_find_qmlmodule(QtSensors 5.3)
+ecm_find_qmlmodule(QtPositioning 5.2)
 
 add_subdirectory(src)
 

@@ -19,6 +19,13 @@ ecm_find_qmlmodule(QtPositioning 5.2)
 
 add_subdirectory(src)
 
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/asteroid-gps-test.in
+	${CMAKE_BINARY_DIR}/asteroid-gps-test
+	@ONLY)
+
+install(PROGRAMS ${CMAKE_BINARY_DIR}/asteroid-gps-test
+	DESTINATION ${CMAKE_INSTALL_BINDIR})
+
 build_translations(i18n)
 generate_desktop(${CMAKE_SOURCE_DIR} asteroid-gps-test)
 

@@ -1,8 +1,10 @@
 cmake_minimum_required(VERSION 3.6.0)
 
-project(asteroid-gps-test
+project(
+	asteroid-gps-test
 	VERSION 2.1.0
-	DESCRIPTION "A gps test app for AsteroidOS")
+	DESCRIPTION "A gps test app for AsteroidOS"
+)
 
 find_package(ECM REQUIRED NO_MODULE)
 find_package(AsteroidApp REQUIRED)
@@ -19,12 +21,16 @@ ecm_find_qmlmodule(QtPositioning 5.2)
 
 add_subdirectory(src)
 
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/asteroid-gps-test.in
+configure_file(
+	${CMAKE_CURRENT_SOURCE_DIR}/asteroid-gps-test.in
 	${CMAKE_BINARY_DIR}/asteroid-gps-test
-	@ONLY)
+	@ONLY
+)
 
-install(PROGRAMS ${CMAKE_BINARY_DIR}/asteroid-gps-test
-	DESTINATION ${CMAKE_INSTALL_BINDIR})
+install(
+	PROGRAMS ${CMAKE_BINARY_DIR}/asteroid-gps-test
+	DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
 
 build_translations(i18n)
 generate_desktop(${CMAKE_SOURCE_DIR} asteroid-gps-test)

@@ -1,8 +1,13 @@
 add_library(asteroid-gps-test main.cpp resources.qrc)
 set_target_properties(asteroid-gps-test PROPERTIES PREFIX "")
 
-target_link_libraries(asteroid-gps-test PUBLIC
-	Asteroid::AsteroidApp)
+target_link_libraries(
+	asteroid-gps-test
+	PUBLIC
+		Asteroid::AsteroidApp
+)
 
-install(TARGETS asteroid-gps-test
-	DESTINATION ${CMAKE_INSTALL_LIBDIR})
+install(
+	TARGETS asteroid-gps-test
+	DESTINATION ${CMAKE_INSTALL_LIBDIR}
+)

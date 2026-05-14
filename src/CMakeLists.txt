@@ -4,7 +4,7 @@ set_target_properties(asteroid-gps-test PROPERTIES PREFIX "")
 target_link_libraries(
 	asteroid-gps-test
 	PUBLIC
-		Asteroid::AsteroidApp
+		Asteroid::AsteroidApp6
 )
 
 install(

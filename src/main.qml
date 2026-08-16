@@ -15,9 +15,9 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-import QtQuick 2.9
-import QtPositioning 5.2
-import org.asteroid.controls 1.0
+import QtQuick
+import QtPositioning
+import org.asteroid.controls
 
 Application {
     id: app
